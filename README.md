@@ -51,7 +51,7 @@ kemudian kunjungi localhost:3000 pada browser anda
 ### Docker
 
 ```bash
-docker -t <image_name> .
+docker build -t <image_name> .
 ```
 
 kemudian kunjungi localhost:3000 pada browser anda
