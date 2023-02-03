@@ -4,11 +4,11 @@ import {
   Box,
   Flex,
   HStack,
-  Image,
   useColorModeValue,
   Link,
   Text,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { cipherPages } from "../../constant/nav";
 
@@ -17,20 +17,18 @@ export default function CipherLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const router = useRouter();
-  console.log(window.location.href.split("/")[4]);
   return (
     <>
       <Box h={"64px"} bg={useColorModeValue("#f8f9fc", "gray.900")} px={4}>
         <Flex alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"}>
-            <Box>
-              <Image
-                boxSize="60px"
-                objectFit="contain"
-                alt="Logo"
-                src="https://w7.pngwing.com/pngs/419/996/png-transparent-search-encrypt-web-search-engine-encryption-duckduckgo-web-browser-others-blue-logo-shield-thumbnail.png"
-              />
+            <Box
+              boxSize="60px"
+              alignItems="center"
+              justifyItems="center"
+              display="flex"
+            >
+              <Image width={60} height={40} alt="Logo" src="/cld.png" />
             </Box>
             <HStack spacing={4}>
               {cipherPages.map((value, idx) => {
