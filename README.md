@@ -10,7 +10,7 @@ Tech Stack
 
 - NextJS Web Framework
 - React Frontend Library
-- Usaha dan Kerja Keras
+- 💪 Usaha dan Kerja Keras 💪
 
 ## Features
 
