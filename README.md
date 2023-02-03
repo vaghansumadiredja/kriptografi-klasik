@@ -1,38 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KRIPTOGRAFI KLASIK
 
-## Getting Started
+## Vaghan Muhammad Sumadiredja 13219003
 
-First, run the development server:
+## Zachrandika Alif Syahreza 18219036
+
+Tugas 1 Kuliah II4031 Kriptografi dan Koding, Program ini berisi berbagai macam algoritma enkripsi dan dekripsi kriptografi klasik
+
+Tech Stack
+
+- NextJS Web Framework
+- React Frontend Library
+- Usaha dan Kerja Keras
+
+## Features
+
+Program ini memiliki fitur enkripsi dan dekripsi algoritma berikut:
+
+- _Vigenere Cipher_
+- _Extended Vigenere Cipher_
+- _Playfair Cipher_
+- _One-Time Pad_
+- _Enigma Cipher_
+
+Program dapat menerima input baik text maupun file.
+
+## How to Run
+
+Untuk menjalankan program ini dibutuhkan NodeJS atau Docker
+
+Pertama clone repo ini dengan cara
+
+```bash
+git clone git@github.com:vaghansumadiredja/kriptografi-klasik.git
+```
+
+### NodeJS
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+atau
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build && npm run start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+kemudian kunjungi localhost:3000 pada browser anda
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Docker
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+docker -t <image_name> .
+```
 
-## Learn More
+kemudian kunjungi localhost:3000 pada browser anda
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT
